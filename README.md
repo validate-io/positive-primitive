@@ -1,4 +1,4 @@
-positive-primitive
+Positive Primitive
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
@@ -17,18 +17,40 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'validate.io-positive-primitive' );
+var isPositive = require( 'validate.io-positive-primitive' );
 ```
 
-#### foo( value )
+#### isPositive( value )
 
-What does this function do?
+Validates if a `value` is a positive `number` primitive.
+
+``` javascript
+var value = Math.PI;
+
+var bool = isPositive( value );
+// returns true
+```
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'validate.io-positive-primitive' );
+var isPositive = require( 'validate.io-positive-primitive' );
+
+console.log( isPositive( 5 ) );
+// returns true
+
+console.log( isPositive( Math.PI ) );
+// returns true
+
+console.log( isPositive( 0 ) );
+// returns false
+
+console.log( isPositive( -5 ) );
+// returns false
+
+console.log( isPositive( new Number( 5 ) ) );
+// returns false
 ```
 
 To run the example code from the top-level application directory,

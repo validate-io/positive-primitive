@@ -26,19 +26,29 @@
     "validate.io",
     "validate",
     "validation",
-    "validator"
+    "validator",
+    "valid",
+    "number",
+    "primitive",
+    "positive",
+    "is",
+    "isnumber",
+    "ispositive",
+    "isprimitive"
   ],
   "bugs": {
     "url": "https://github.com/validate-io/positive-primitive/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "validate.io-number-primitive": "^1.0.0"
+  },
   "devDependencies": {
-    "chai": "2.x.x",
+    "chai": "3.x.x",
     "mocha": "2.x.x",
     "coveralls": "^2.11.1",
     "istanbul": "^0.3.0",
     "jshint": "2.x.x",
-    "jshint-stylish": "^1.0.0"
+    "jshint-stylish": "2.x.x"
   },
   "license": "MIT"
 }
